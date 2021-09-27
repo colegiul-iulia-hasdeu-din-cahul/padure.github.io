@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
             button.textContent = "Delete";
             button.classList.add('btn');
             button.classList.add('btn-danger');
+            addForm.reset();
             //Sterge Participants
             button.addEventListener('click', event => {
                 event.target.parentElement.remove(event.target);
@@ -21,6 +22,5 @@ document.addEventListener('DOMContentLoaded', function () {
             li.classList.add('list-group-item');
             li.appendChild(button);
         list.appendChild(li);
-       addForm.reset();
     });
 });
