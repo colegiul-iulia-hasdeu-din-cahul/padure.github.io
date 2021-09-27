@@ -21,5 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
             li.classList.add('list-group-item');
             li.appendChild(button);
         list.appendChild(li);
+       addForm.reset();
     });
 });
